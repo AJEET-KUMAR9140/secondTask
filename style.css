@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("newtodo.jpg");
+    background-position: center;
+    background-size: cover;
+  
+}
+
+.main{
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.to-do{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+.to-do img{
+   
+    filter: drop-shadow(5px 10px 15px black);
+}
+
+.to-do p{
+    font-size: 2rem;
+    position: relative;
+    top: 25px;
+    filter: drop-shadow(40px 20px 39px black);
+    font-weight: 600;
+
+}
+
+.todo-massage{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    font-size: 1.5rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.main-img{
+    height: 90vh;
+    width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.img{
+    height: 600px;
+    width: 600px;
+    margin-top: 12px;
+    margin-left: 40px;
+    filter: brightness(1.5);
+}
+
+.content{
+    position: absolute;
+    top: 200px;
+    left: 530px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contenair{
+  height: 30px;
+  width: 500px;
+ display: flex;
+ margin: 8px;
+ 
+
+}
+.todo-list{
+    width: 500px;
+    background: transparent;
+    border: none;
+    margin: auto;
+    outline: none;
+    border-bottom: 2px solid rgb(219, 107, 10);
+    font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.todo-chekbox{
+    cursor: pointer;
+}
+.contenair:has(.todo-chekbox:checked){
+    color: rgb(84,35,9);
+    background:rgb(0,0,0,0.13);
+    text-decoration: line-through 1.5px;
+    order: 1;
+}
